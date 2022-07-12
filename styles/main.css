@@ -1,0 +1,114 @@
+/* variables */
+:root {
+  --bs-dark-rgb: 7, 23, 51;
+}
+
+/* global styles */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  border-radius: 2em;
+}
+
+/* navbar */
+#navbar {
+  --bs-navbar-brand-font-size: 1.25rem;
+
+  --bs-navbar-color: #FFF;
+  --bs-navbar-nav-link-padding-x: 1rem;
+  --bs-nav-link-font-size: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  #navbar {
+    --bs-navbar-brand-font-size: 2rem;
+    --bs-navbar-padding-y: 0.875rem;
+  }
+}
+
+#navbar .navbar-brand {
+  letter-spacing: 0.0625em;
+}
+
+/* hero section */
+#hero img {
+  max-height: 26rem;
+  object-fit: cover;
+}
+
+#hero h1 {
+  font-size: 1.375rem;
+}
+
+@media (min-width: 992px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* services */
+#services h2 {
+  position: relative;
+  padding-bottom: .375em;
+  width: fit-content;
+}
+
+#services h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.2em;
+  background-color: #5ce0fe;
+}
+
+#services .card {
+  border-width: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0.1875rem 0.75rem;
+  border-radius: .75rem;
+}
+
+#services .card-icon {
+  color: #00cdfd;
+  font-size: 2.5rem;
+}
+
+#services .card .card-text {
+  color: #595959;
+}
+
+#services .card.text-white .card-text {
+  color: #a8aeb8;
+}
+
+/* contact */
+#contact {
+  position: relative;
+}
+
+#contact .form-control {
+  border-radius: 0;
+  border-color: black;
+}
+
+#contact .form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, .25);
+}
+
+@media (min-width: 992px) {
+  #contact .contact-background {
+    position: absolute;
+    right: 50%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  #contact .contact-background img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
